@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class='app'>
+			<div class='header'></div>
+			<div class='content'>
+				<div class='item item1'>
+					<div class='padding'>
+						填充
+					</div>
+				</div>
+				<div class='item item2'></div>
+				<div class='item item3'></div>
+			</div>
+		</div>
+	</body>
+	<style>
+		.app{
+			border: 1px solid black;
+			position: relative;
+			top: 100px;
+			left: 100px;
+			height: 300px;
+			width: 150px;
+			display: flex;
+			flex-flow: column;
+		}
+		.header{
+			height: 30px;
+			width: 100%;
+			background: mediumseagreen;
+		}
+		.content{
+			flex: 1;
+			background: #CCCCCC;
+			overflow-x:auto;
+			display: flex;
+		}
+		.content::-webkit-scrollbar{
+			display: none;
+		}
+		.item{
+			flex: 0 0 150px;
+			overflow-y: auto;
+		}
+		.item::-webkit-scrollbar{
+			display: none;
+		}
+		.item1{
+			background: lightcoral;
+		}
+		
+		.item2{
+			background: lightsalmon;
+		}
+		.item3{
+			background: lightcyan;
+		}
+		.padding{
+			height: 300px;
+			
+		}
+	</style>
+</html>

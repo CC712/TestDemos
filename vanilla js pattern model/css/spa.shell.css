@@ -1,0 +1,78 @@
+.spa-chat {
+	width: 25em;
+	background: #ccc;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	max-height: 100em;
+	border-radius: 10px 10px 0 0;
+	z-index: 1;
+	transition:all 1s;
+	overflow: hidden;
+}
+
+.spa-chat-head {
+	height: 2em;
+	color: white;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+}
+
+.spa-chat-head-toggle,
+.spa-chat-head-title,
+.spa-chat-head-closer {
+	text-align: center;
+	line-height: 1.8em;
+}
+
+.spa-chat-head-toggle {
+	width: 2em;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.spa-chat-head-title {
+	width: 20em;
+	background: blue;
+	text-align: center;
+	margin-left: -2em;
+	margin-right: -2em;
+}
+
+.spa-chat-head-closer {
+	width: 2em;
+	cursor: pointer;
+}
+
+.spa-chat-sizer {
+	height: 20em;
+	width: 20em;
+	margin: 10px auto;
+	position: relative;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	overflow-x:auto;
+	overflow-y: scroll;
+}
+
+.spa-chat-msgs {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.spa-chat-box {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	height:2em;
+}
+
+.spa-chat-box input {
+	width: 20em;
+}
+
+.spa-chat-box button {
+	width: 4em;
+}
